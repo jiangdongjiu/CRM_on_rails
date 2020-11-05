@@ -10,10 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_05_023145) do
+ActiveRecord::Schema.define(version: 2020_11_05_061548) do
 
   create_table "customers", force: :cascade do |t|
-    t.string "fullName"
+    t.string "full_name"
     t.string "phone"
     t.string "email"
     t.text "notes"
