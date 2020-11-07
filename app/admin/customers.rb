@@ -1,5 +1,5 @@
 ActiveAdmin.register Customer do
-
-  permit_params :full_name, :phone, :email, :notes
+  # whitelisting
+  permit_params :full_name, :phone, :email, :notes, :image
 
 end
