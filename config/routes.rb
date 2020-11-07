@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
-  root to: 'customer#index'
+  root to: 'customers#index'
 
   resources :customers, only: [:index] do
     collection do
@@ -13,5 +13,5 @@ Rails.application.routes.draw do
       get 'alphabetized'
     end
   end
-  
+
 end

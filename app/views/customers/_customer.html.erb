@@ -1,1 +1,22 @@
-<%= image_tag("icon.png", size: "16x10", alt: "Edit Entry") %>
+<div class="column">
+  <div class="card">
+    <h4 class= "title is-4"><%= customer.full_name %></h4>
+    <div class="card-image">
+      <figure class="image is-3by4">
+        <%= image_tag(customer.image, alt: customer.full_name)%>
+      </figure>
+    </div>
+    <div class="card-content">
+    <div class="content">
+      <p><%= customer.phone %></p>
+      <% if customer.email.present? %>
+        <p><%= customer.email %></p>
+      <% else %>
+        <br />
+      <% end %>
+
+    </div>
+  </div>
+  </div>
+
+</div>
